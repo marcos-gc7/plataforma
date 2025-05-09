@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --font: "Outfit", sans-serif;
+    --color1: #364670;
+    --color2: #1976d2;
+    --color3: #1d92f1;
+    --color4: #ffd12c;
+    --color5: #3bc963;
+    --color-bg1: #e6e4ec;
+    --color-bg2: #ddeffd;
+    --color-bg3: #fff8df;
+    --color-bg4: #e2f7e8;
+
+    --background: #f0f5fd;
+    --btn-hover: #0d47a1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* Seção da Esquerda */
+
+body {
+    display: flex;
+    height: 100vh;
+    background: var(--background);
+}
+
+.left-section {
+    background: #fff;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 25px 10px;
+    transition: all 0.3s ease;
+}
+
+.left-section h2 {
+    color: var(--color1);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.left-section .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-section .sidebar .item,
+.left-section .sign-out {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.left-section .sidebar .item.active h3,
+.left-section .sidebar .item.item.active i,
+.left-section .sidebar .item:hover,
+.left-section .sign-out:hover {
+    color: var(--color2);
+}
+
+.left-section .sidebar .item h3,
+.left-section .sign-out h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.left-section .sidebar .item i,
+.left-section .sign-out i {
+    font-size: 22px;
+}
+
+/* Main Header */
+
+.main {
+    flex: 6;
+    padding: 25px;
+}
+
+.main .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .header .search {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(136, 146, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+
+.main .header .search button {
+    font-size: 20px;
+    border: none;
+    background: transparent;
+}
+
+.main .header .search input {
+    padding: 4px 6px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.main .header .search i{
+    cursor: pointer;
+}
+
+.main .header .icon-btns {
+    display: flex;
+    gap: 8px;
+}
+
+.main .header .icon-btns i {
+    font-size: 20px;
+    background: var(--color2);
+    padding: 8px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main .header .icon-btns i:hover {
+    background: var(--btn-hover);
+}
+
+.main .header .icon-btns i#menu-btn {
+    display: none;
+}
+
+/* Acesso Rápido */
+
+.main .separator {
+    margin: 35px 0 20px;
+    font-weight: 500;
+    color: var(--color1);
+}
+
+.main .quick-access {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.main .quick-access .item {
+    background: #fff;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3 ease;
+    box-shadow: 0 2px 6px rgba(136, 146, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+
+.main ,.quick-access .item:hover {
+    box-shadow: none;
+    border: #999;
+}
+
+.main .quick-access .item i {
+    font-size: 46px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.main .quick-access .item:nth-child(1) i 
+{
+    color: var(--color2);
+    background: var(--color-bg1);
+}
+
+.main .quick-access .item:nth-child(2) i 
+{
+    color: var(--color3);
+    background: var(--color-bg2);
+}
+
+.main .quick-access .item:nth-child(3) i 
+{
+    color: var(--color4);
+    background: var(--color-bg3);
+}
+
+.main .quick-access .item:nth-child(4) i 
+{
+    color: var(--color5);
+    background: var(--color-bg4);
+}
+
+.main .quick-access .item h5 {
+    font-size:  18px;
+    font-weight: 500;
+    color: var(--color1);
+    margin: 15px 0 8px;
+}
+
+.main .quick-access .item p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-section {
+    flex: 2;
+}
+
+
+
