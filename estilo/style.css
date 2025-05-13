@@ -456,14 +456,30 @@ body {
     gap: 10px;
 }
 
+.right-section .widgets .bottom .premium .title .nav {
+    padding: 7px 10px;
+    background: var(--color2);
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.right-section .widgets .bottom .premium .title .nav:hover {
+    background: var(--btn-hover);
+    border-color: transparent;
+    color: #fff;
+}
+
 .right-section .widgets .bottom .premium .title h5 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
+    
 }
 
 .right-section .widgets .bottom .premium .title i {
     font-size: 30px;
-    padding: 10px;
+    padding: 14px;
     background: var(--color2);
     color: #fff;
     border-radius: 14px; 
@@ -644,6 +660,10 @@ body {
         margin: 0;
     }
 
+    .right-section .widgets .bottom .premium .title .nav {
+        padding: 17px 10px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -668,4 +688,10 @@ body {
         font-size: 13px;
     }
 
+}
+
+@media screen and (max-width: 541px) {
+    .right-section .widgets .bottom .premium .title .nav {
+        padding: 8px;
+    }
 }
