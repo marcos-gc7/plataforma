@@ -477,6 +477,7 @@ body {
 
 /* Media Queries */
 @media screen and (max-width: 1230px) {
+
     .left-section {
         width: 90px;
     }
@@ -552,3 +553,119 @@ body {
 
 }
 
+
+@media screen and (max-width: 920px) {
+
+    .left-section {
+        position: absolute;
+        width: 160px;
+        left: -160px;
+        z-index: 1000;
+        box-shadow: 0 10 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-section .sidebar .item {
+        justify-content: start;
+    }
+
+    .left-section .sidebar h3,
+    .left-section .sign-out h3 {
+        display: block;
+    }
+
+    .left-section .sidebar .item i, 
+    .left-section .sign-out i {
+        font-size: 22px;
+    }
+
+    .main,
+    .right-section {
+        padding: 15px;
+    }
+
+    .main .header {
+        gap: 10px;
+    }
+
+    .main .header .icon-btns i#menu-btn {
+        display: block;
+    }
+
+    .main .quick-access ,item p {
+        text-align: center;
+    }
+
+    .main table tbody tr td.name,
+    .main table tbody tr td.extension,
+    .main table tbody tr td.size {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        flex-direction: column;
+    }
+
+    .main{
+        padding: 26px 15px 0;
+    }
+
+    .main .header{
+        justify-content: start;
+    }
+
+    .main .header .search{
+        width: 30%;
+    }
+
+    .right-section .profile{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .right-section .widgets{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .right-section .widgets .disk{
+        width: 48%;
+    }
+
+    .right-section .widgets .bottom{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .right-section .widgets .bottom button{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .main {
+        padding: 100px 15px 0;
+    }
+
+    .main .header .search {
+        width: 68%;
+    }
+
+    .right-section .profile {
+        width: 94%;
+    }
+
+    .right-section .widgets .disk .info h5 {
+        font-size: 14px;
+    }
+
+    .right-section .widgets .disk .info p {
+        font-size: 13px;
+    }
+}
