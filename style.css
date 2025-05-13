@@ -477,12 +477,12 @@ body {
 
 /* Media Queries */
 @media screen and (max-width: 1230px) {
-
-    .left-section {
+    
+    .left-section{
         width: 90px;
     }
 
-    .left-section h2 {
+    .left-section h2{
         font-size: 17px;
     }
 
@@ -490,114 +490,113 @@ body {
         justify-content: center;
     }
 
-    .left-section .sidebar .item h3, 
-    .left-section .sign-out h3 {
+    .left-section .sidebar .item h3,
+    .left-section .sign-out h3{
         display: none;
     }
 
     .left-section .sidebar .item i,
-    .left-section .sign-out i {
+    .left-section .sign-out i{
         font-size: 26px;
     }
 
-    .main .quick-access {
+    .main .quick-access{
         justify-content: space-between;
     }
 
-    .main ,.quick-access .item {
+    .main .quick-access .item{
         width: 23%;
     }
 
-    .main .quick-access .item i {
+    .main .quick-access .item i{
         font-size: 36px;
     }
 
-    .main .quick-access .item h5 {
+    .main .quick-access .item h5{
         font-size: 16px;
     }
 
     .main .quick-access .item p,
-    .right-section .profile .info .account p {
+    .right-section .profile .info .account p{
         font-size: 12px;
     }
 
-    .right-section .widgets .disk {
+    .right-section .widgets .disk{
         height: 270px;
     }
 
-    .right-section .widgets .disk .progress .progress-bar {
+    .right-section .widgets .disk .progress .progress-bar{
         width: 120px;
         height: 120px;
     }
 
-    .right-section .widgets .disk .info h5 {
+    .right-section .widgets .disk .info h5{
         font-size: 18px;
     }
 
-    .right-section .widgets .bottom button {
+    .right-section .widgets .bottom button{
         font-size: 17px;
         padding: 12px;
     }
 
-    .right-section .widgets .bottom .premium .title h5 {
-        font: size 17px;;
+    .right-section .widgets .bottom .premium .title h5{
+        font-size: 17px;
     }
 
-    .right-section .widgets .bottom .premium .title i {
+    .right-section .widgets .bottom .premium .title i{
         font-size: 26px;
     }
 
-    .right-section .widgets .bottom .premium p {
+    .right-section .widgets .bottom .premium p{
         font-size: 14px;
     }
 
 }
 
-
-@media screen and (max-width: 920px) {
-
-    .left-section {
+@media screen and (max-width: 992px) {
+    
+    .left-section{
         position: absolute;
         width: 160px;
         left: -160px;
         z-index: 1000;
-        box-shadow: 0 10 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
 
-    .left-section .sidebar .item {
+    .left-section .sidebar .item{
         justify-content: start;
     }
 
-    .left-section .sidebar h3,
-    .left-section .sign-out h3 {
+    .left-section .sidebar .item h3,
+    .left-section .sign-out h3{
         display: block;
     }
 
-    .left-section .sidebar .item i, 
-    .left-section .sign-out i {
+    .left-section .sidebar .item i,
+    .left-section .sign-out i{
         font-size: 22px;
     }
 
     .main,
-    .right-section {
+    .right-section{
         padding: 15px;
     }
 
-    .main .header {
+    .main .header{
         gap: 10px;
     }
 
-    .main .header .icon-btns i#menu-btn {
+    .main .header .icon-btns i#menu-btn{
         display: block;
     }
 
-    .main .quick-access ,item p {
+    .main .quick-access .item p{
         text-align: center;
     }
 
     .main table tbody tr td.name,
     .main table tbody tr td.extension,
-    .main table tbody tr td.size {
+    .main table tbody tr td.size{
         font-size: 13px;
     }
 
@@ -648,24 +647,25 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-
-    .main {
+    
+    .main{
         padding: 100px 15px 0;
     }
 
-    .main .header .search {
+    .main .header .search{
         width: 68%;
     }
 
-    .right-section .profile {
+    .right-section .profile{
         width: 94%;
     }
 
-    .right-section .widgets .disk .info h5 {
+    .right-section .widgets .disk .info h5{
         font-size: 14px;
     }
 
-    .right-section .widgets .disk .info p {
+    .right-section .widgets .disk .info p{
         font-size: 13px;
     }
+
 }
