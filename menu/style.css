@@ -1,11 +1,13 @@
 @charset "UTF-8"; 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root {
-    --background: #1b2129;
-    --principal: #4990E0;
-    --hover: #5C82AD;  
+    --background: #0d1622;
+    --principal: #1976d2;
+    --hover: #0d47a1;  
 }
 
 * {
@@ -84,7 +86,7 @@ nav {
     font-weight: 600;
     color: #fff;
     background-color: var(--principal);
-    border-radius: 5px;
+    border-radius: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -132,6 +134,7 @@ header .content h1 {
 }
 
 header .content h1 span {
+    font-family: 'Poppins', sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
@@ -182,6 +185,9 @@ section .header {
 }
 
 .features .card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
@@ -197,6 +203,7 @@ section .header {
 .features .card span{
     display: inline-block;
     background-color: var(--hover);
+    width: 47px;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -219,6 +226,7 @@ section .header {
 .features .card a {
     color: #fff;
     transition: all 0.3s ease;
+
 }
 
 .features .card a:hover {
@@ -237,7 +245,7 @@ section .header {
 .pricing {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
